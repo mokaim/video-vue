@@ -1,0 +1,114 @@
+:root {
+    --navbar-color : #212529;
+    --body-color : #30363b;
+    --top-navbar-color : #262b2f;
+}
+
+body {
+    background-color: var(--body-color) !important;
+}
+
+
+.navbar .search-bar{
+    background-color: var(--navbar-color) !important;
+    color: white; !important;
+    padding-left: 4rem;
+}
+
+input[type="search"]:focus{
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 156, 156, 0.6);
+}
+
+/*Search Form 에서 입력하였을 경우 표준 x버튼 없앰*/
+/* IE의 경우 */
+input::-ms-clear,
+input::-ms-reveal{
+    display:none;
+}
+/* 크롬이나 엣지의 경우 */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    display:none;
+}
+
+.img-thumbnail {
+    height: 2rem;
+}
+
+.navbar-notification {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar-dark .navbar-notification {
+    color: #fff;
+}
+.navbar-dark .navbar-notification:hover, .navbar-dark .navbar-notification:focus {
+    color: #9b9b9b;
+}
+
+.navbar-notification-md {
+    margin-right: 1rem;
+}
+
+.search-icon {
+    position: absolute;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem !important;
+    text-align: center;
+    pointer-events: none;
+    margin-left: 1rem;
+
+}
+
+.banner-radius,.article-radius {
+    border-radius: 1.25rem;
+}
+
+
+/*
+https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
+CSS 개체 에 맞게 이미지를 확장하고 자르는 방법
+*/
+.article-radius {
+    object-fit: cover;
+    width: auto;
+    aspect-ratio: 3 / 2;
+}
+
+/* 상단 네비게이션바에 게시물이 가려지기에 상단 여백추가*/
+#articles {
+    margin-top : 5rem;
+}
+
+.square {
+
+}
+
+/* md 이상 */
+@media (min-width: 768px) {
+    .article-radius {
+        object-fit: cover;
+        width: 500px;
+        aspect-ratio: 3 / 2;  /*https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio  종횡비*/
+    }
+
+}
+
+
+/* lg 이상 */
+@media (min-width: 992px) {
+    #articles {
+        margin-left: 260px;
+    }
+}

@@ -1,0 +1,47 @@
+@media (min-width: 1608px) {
+
+    .col-sb-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+}
+
+@media (min-width: 1816px) {
+
+    .col-mb-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+}
+
+@media (min-width: 2024px) {
+
+    .col-lgb-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 2232px) {
+
+    .col-xlb-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+}
+
+
+
+
+@media (min-width: 2400px) {
+
+    .col-mb-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+}

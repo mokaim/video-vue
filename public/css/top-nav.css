@@ -1,0 +1,22 @@
+
+
+#top-nav {
+    background-color: var(--navbar-color) !important;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    flex-direction: row;
+
+}
+
+
+@media (min-width: 992px) {
+    #top-nav {
+        background-color:#ddd;
+        position: fixed;
+        top: 0;
+        left: 260px;
+        right: 0px;
+    }
+}

@@ -1,27 +1,24 @@
 <template>
   <div id="app">
-    <SignIn msg="Welcome to Your Vue.js App"/>
+    <Home></Home>
   </div>
 </template>
 
 <script>
-import SignIn from './components/auth/SignIn'
+
+import Home from './views/Home'
+
+//import SideNav from "@/components/home/SideNav";
 
 export default {
   name: 'App',
   components: {
-    SignIn
+    Home
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
